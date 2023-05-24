@@ -5,6 +5,7 @@ import GoogleProvider from "next-auth/providers/google";
 import clientPromise from "@/lib/mongodb";
 
 export default NextAuth({
+  secret: process.env.SECRET,
   providers: [
     // OAuth authentication providers...
 
